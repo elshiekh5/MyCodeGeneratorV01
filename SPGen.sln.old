@@ -1,0 +1,21 @@
+Microsoft Visual Studio Solution File, Format Version 7.00
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "SPGen", "SPGen.csproj", "{EF0308D5-3DC7-491C-BECF-B57413E04A1A}"
+EndProject
+Global
+	GlobalSection(SolutionConfiguration) = preSolution
+		ConfigName.0 = Debug
+		ConfigName.1 = Release
+	EndGlobalSection
+	GlobalSection(ProjectDependencies) = postSolution
+	EndGlobalSection
+	GlobalSection(ProjectConfiguration) = postSolution
+		{EF0308D5-3DC7-491C-BECF-B57413E04A1A}.Debug.ActiveCfg = Debug|.NET
+		{EF0308D5-3DC7-491C-BECF-B57413E04A1A}.Debug.Build.0 = Debug|.NET
+		{EF0308D5-3DC7-491C-BECF-B57413E04A1A}.Release.ActiveCfg = Release|.NET
+		{EF0308D5-3DC7-491C-BECF-B57413E04A1A}.Release.Build.0 = Release|.NET
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+	EndGlobalSection
+	GlobalSection(ExtensibilityAddIns) = postSolution
+	EndGlobalSection
+EndGlobal

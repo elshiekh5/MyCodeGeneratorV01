@@ -1,0 +1,226 @@
+﻿<Project DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003" ToolsVersion="3.5">
+  <PropertyGroup>
+    <ProjectType>Local</ProjectType>
+    <ProductVersion>9.0.21022</ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{EF0308D5-3DC7-491C-BECF-B57413E04A1A}</ProjectGuid>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ApplicationIcon>App.ico</ApplicationIcon>
+    <AssemblyKeyContainerName>
+    </AssemblyKeyContainerName>
+    <AssemblyName>SPGen</AssemblyName>
+    <AssemblyOriginatorKeyFile>
+    </AssemblyOriginatorKeyFile>
+    <DefaultClientScript>JScript</DefaultClientScript>
+    <DefaultHTMLPageLayout>Grid</DefaultHTMLPageLayout>
+    <DefaultTargetSchema>IE50</DefaultTargetSchema>
+    <DelaySign>false</DelaySign>
+    <OutputType>WinExe</OutputType>
+    <RootNamespace>SPGen</RootNamespace>
+    <RunPostBuildEvent>OnBuildSuccess</RunPostBuildEvent>
+    <StartupObject>
+    </StartupObject>
+    <FileUpgradeFlags>
+    </FileUpgradeFlags>
+    <UpgradeBackupLocation>
+    </UpgradeBackupLocation>
+    <OldToolsVersion>2.0</OldToolsVersion>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <OutputPath>bin\Debug\</OutputPath>
+    <AllowUnsafeBlocks>false</AllowUnsafeBlocks>
+    <BaseAddress>285212672</BaseAddress>
+    <CheckForOverflowUnderflow>false</CheckForOverflowUnderflow>
+    <ConfigurationOverrideFile>
+    </ConfigurationOverrideFile>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <DocumentationFile>
+    </DocumentationFile>
+    <DebugSymbols>true</DebugSymbols>
+    <FileAlignment>4096</FileAlignment>
+    <NoStdLib>false</NoStdLib>
+    <NoWarn>
+    </NoWarn>
+    <Optimize>false</Optimize>
+    <RegisterForComInterop>false</RegisterForComInterop>
+    <RemoveIntegerChecks>false</RemoveIntegerChecks>
+    <TreatWarningsAsErrors>true</TreatWarningsAsErrors>
+    <WarningLevel>4</WarningLevel>
+    <DebugType>full</DebugType>
+    <ErrorReport>prompt</ErrorReport>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <OutputPath>bin\Release\</OutputPath>
+    <AllowUnsafeBlocks>false</AllowUnsafeBlocks>
+    <BaseAddress>285212672</BaseAddress>
+    <CheckForOverflowUnderflow>false</CheckForOverflowUnderflow>
+    <ConfigurationOverrideFile>
+    </ConfigurationOverrideFile>
+    <DefineConstants>TRACE</DefineConstants>
+    <DocumentationFile>
+    </DocumentationFile>
+    <DebugSymbols>false</DebugSymbols>
+    <FileAlignment>4096</FileAlignment>
+    <NoStdLib>false</NoStdLib>
+    <NoWarn>
+    </NoWarn>
+    <Optimize>true</Optimize>
+    <RegisterForComInterop>false</RegisterForComInterop>
+    <RemoveIntegerChecks>false</RemoveIntegerChecks>
+    <TreatWarningsAsErrors>false</TreatWarningsAsErrors>
+    <WarningLevel>4</WarningLevel>
+    <DebugType>none</DebugType>
+    <ErrorReport>prompt</ErrorReport>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="System">
+      <Name>System</Name>
+    </Reference>
+    <Reference Include="System.Data">
+      <Name>System.Data</Name>
+    </Reference>
+    <Reference Include="System.DirectoryServices">
+      <Name>System.DirectoryServices</Name>
+    </Reference>
+    <Reference Include="System.Drawing">
+      <Name>System.Drawing</Name>
+    </Reference>
+    <Reference Include="System.Web" />
+    <Reference Include="System.Windows.Forms">
+      <Name>System.Windows.Forms</Name>
+    </Reference>
+    <Reference Include="System.Xml">
+      <Name>System.XML</Name>
+    </Reference>
+    <COMReference Include="SQLDMO">
+      <Guid>{10010001-E260-11CF-AE68-00AA004A34D5}</Guid>
+      <VersionMajor>8</VersionMajor>
+      <VersionMinor>0</VersionMinor>
+      <Lcid>0</Lcid>
+      <WrapperTool>tlbimp</WrapperTool>
+    </COMReference>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="app.config" />
+    <None Include="database.jpg" />
+    <Content Include="App.ico" />
+    <Content Include="Interop.SQLDMO.dll" />
+    <Content Include="table.jpg" />
+    <Compile Include="AdditionalClasses\SiteUrls\SiteUrlsBuilder.cs" />
+    <Compile Include="AdditionalClasses\SiteUrls\TableUrls.cs" />
+    <Compile Include="AdditionalClasses\SiteOptions\TableOptions.cs" />
+    <Compile Include="AdditionalClasses\SiteOptions\SiteOptionsBuilder.cs" />
+    <Compile Include="AdditionalClasses\SiteRecources\LanguageXmlBuilder.cs" />
+    <Compile Include="AdditionalClasses\SiteSettings\SiteSettingsBuilder.cs" />
+    <Compile Include="AdditionalClasses\SiteSettings\TableSettings.cs" />
+    <Compile Include="AdditionalClasses\SiteRecources\TableResource.cs" />
+    <Compile Include="AssemblyInfo.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="DataProvider\Constrain.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="DataProvider\SqlDataProvider.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="DataProvider\SqlProvider.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="DirectoriesManager.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="obj\Enumeration\MethodType.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="FileManager.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="FormsBuilder.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="frmMain.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="GeneratorClass.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Globals.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="ProjectFiles\ProjectBuilder.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="ProjectFiles\VDirLib.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="ProjectFiles\VirtualDirectoryBuilder.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="ProjectFiles\WebConfigBuilder.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="SecurityBuilder.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="DataProvider\SPGen.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Table Classes\ClassEntityBuilder.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Table Classes\ClassFactoryBuilder.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Table Classes\SqlDataProviderBuilder.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Table Classes\UserType.cs" />
+    <Compile Include="UserControl Classes\AdminNavigationBuilder.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="UserControl Classes\App_Template\AppTemplateBuilder.cs" />
+    <Compile Include="UserControl Classes\GetAllWithSorting\GetAll_CodeBehindBuilder.cs" />
+    <Compile Include="UserControl Classes\GetAllWithSorting\GetAll_InterfaceBuilder.cs" />
+    <Compile Include="UserControl Classes\Details\Details_CodeBehindBuilder.cs" />
+    <Compile Include="UserControl Classes\Details\Details_InterfaceBuilder.cs" />
+    <Compile Include="UserControl Classes\UserPages\DefaultPage\DefaultPage_CodeBehindBuilder.cs" />
+    <Compile Include="UserControl Classes\UserPages\DefaultPage\DefaultPage_InterfaceBuilder.cs" />
+    <Compile Include="UserControl Classes\GetAllForUser\GetAllForUser_CodeBehindBuilder.cs" />
+    <Compile Include="UserControl Classes\GetAllForUser\GetAllForUser_InterfaceBuilder.cs" />
+    <Compile Include="UserControl Classes\Create\Create_InterfaceBuilder.cs" />
+    <Compile Include="UserControl Classes\Create\Create_CodeBehindBuilder.cs" />
+    <Compile Include="UserControl Classes\InterfaceBuilder.cs" />
+    <Compile Include="UserControl Classes\GetAll\GetAll_CodeBehindBuilder.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="UserControl Classes\GetAll\GetAll_InterfaceBuilder.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="UserControl Classes\SimplefaceBuilder.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="UserControl Classes\Update\Update_CodeBehindBuilder.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="UserControl Classes\Update\Update_InterfaceBuilder.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="UserControl Classes\UserControlBuilder.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="UserControl Classes\UserPages\Details\DetailsPage_CodeBehindBuilder.cs" />
+    <Compile Include="UserControl Classes\UserPages\Details\DetailsPage_InterfaceBuilder.cs" />
+    <EmbeddedResource Include="frmMain.resx">
+      <DependentUpon>frmMain.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+  </ItemGroup>
+  <Import Project="$(MSBuildBinPath)\Microsoft.CSharp.targets" />
+  <PropertyGroup>
+    <PreBuildEvent>
+    </PreBuildEvent>
+    <PostBuildEvent>
+    </PostBuildEvent>
+  </PropertyGroup>
+</Project>
